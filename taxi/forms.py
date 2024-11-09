@@ -11,7 +11,7 @@ def validate_license_number(license_number):
             and license_number[:3].isupper()
             and license_number[3:].isdigit()):
         return license_number
-    raise forms.ValidationError("Invalid license number.")
+    raise forms.ValidationError("Invalid license number")
 
 
 class DriverCreationForm(UserCreationForm):
